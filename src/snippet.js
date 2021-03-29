@@ -1,6 +1,5 @@
 // this code is auto-generated. DO NOT EDIT.
 /* eslint-disable */
-// this is a test
 const snippet = (
   {
     orgId,
