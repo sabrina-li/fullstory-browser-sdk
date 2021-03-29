@@ -102,7 +102,7 @@ const run = async () => {
 
   // https://octokit.github.io/rest.js/#octokit-routes-pulls-create
   console.log(`creating PR for branch ${branchName}, from base ${GITHUB_REF}`);
-  const base = GITHUB_REF.split('').pop();
+  const base = GITHUB_REF.split('/').pop();
   const prResponse = await octokit.pulls.create({
     ...repoInfo,
     title: PR_TITLE,
